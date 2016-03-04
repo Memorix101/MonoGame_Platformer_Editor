@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<level>
+  <LevelObjects>
+    <tile type="DirtMid" x="0" y="576" />
+    <tile type="DirtMid" x="32" y="576" />
+    <tile type="DirtMid" x="64" y="576" />
+    <tile type="DirtMid" x="96" y="576" />
+    <tile type="DirtMid" x="128" y="576" />
+    <tile type="DirtMid" x="160" y="576" />
+    <tile type="DirtMid" x="288" y="576" />
+    <tile type="DirtMid" x="320" y="576" />
+    <tile type="DirtMid" x="352" y="576" />
+    <tile type="DirtMid" x="384" y="576" />
+    <tile type="DirtMid" x="416" y="576" />
+    <tile type="DirtMid" x="448" y="576" />
+    <tile type="DirtMid" x="480" y="576" />
+    <tile type="DirtMid" x="512" y="576" />
+    <tile type="DirtMid" x="640" y="576" />
+    <tile type="DirtMid" x="672" y="576" />
+    <tile type="DirtMid" x="704" y="576" />
+    <tile type="DirtMid" x="736" y="576" />
+    <tile type="DirtMid" x="768" y="576" />
+    <tile type="DirtTopMid" x="0" y="544" />
+    <tile type="DirtTopMid" x="32" y="544" />
+    <tile type="DirtTopMid" x="64" y="544" />
+    <tile type="DirtTopMid" x="96" y="544" />
+    <tile type="DirtTopMid" x="128" y="544" />
+    <tile type="DirtTopMid" x="320" y="544" />
+    <tile type="DirtTopMid" x="352" y="544" />
+    <tile type="DirtTopMid" x="384" y="544" />
+    <tile type="DirtTopMid" x="416" y="544" />
+    <tile type="DirtTopMid" x="448" y="544" />
+    <tile type="DirtTopMid" x="480" y="544" />
+    <tile type="DirtTopMid" x="672" y="544" />
+    <tile type="DirtTopMid" x="704" y="544" />
+    <tile type="DirtTopMid" x="736" y="544" />
+    <tile type="DirtTopMid" x="768" y="544" />
+    <tile type="DirtTopRight" x="160" y="544" />
+    <tile type="DirtTopRight" x="512" y="544" />
+    <tile type="DirtTopLeft" x="640" y="544" />
+    <tile type="DirtTopLeft" x="288" y="544" />
+    <tile type="RedBox" x="672" y="448" />
+    <tile type="RedBox" x="704" y="480" />
+    <tile type="Crate" x="288" y="512" />
+    <tile type="Crate" x="512" y="512" />
+    <tile type="DirtTopMid" x="608" y="384" />
+    <tile type="DirtTopMid" x="576" y="384" />
+    <tile type="DirtTopMid" x="544" y="384" />
+    <tile type="DirtTopMid" x="512" y="384" />
+    <tile type="DirtTopMid" x="480" y="384" />
+    <tile type="DirtTopMid" x="448" y="384" />
+    <tile type="DirtTopMid" x="416" y="384" />
+    <tile type="DirtTopMid" x="384" y="384" />
+    <tile type="DirtTopMid" x="352" y="384" />
+    <tile type="DirtTopMid" x="320" y="384" />
+    <tile type="DirtTopMid" x="288" y="384" />
+    <tile type="DirtTopMid" x="256" y="384" />
+    <tile type="DirtTopMid" x="224" y="384" />
+    <tile type="DirtTopMid" x="192" y="384" />
+    <tile type="DirtTopMid" x="160" y="384" />
+    <tile type="DirtTopMid" x="128" y="384" />
+    <tile type="DirtTopMid" x="96" y="384" />
+    <tile type="DirtTopMid" x="64" y="384" />
+  </LevelObjects>
+  <Actor>
+    <actor x="384" y="512" />
+  </Actor>
+  <Player>
+    <player x="0" y="512" />
+  </Player>
+</level>
