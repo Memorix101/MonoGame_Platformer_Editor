@@ -3,7 +3,6 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
 using FarseerPhysics.Dynamics;
-using FarseerPhysics.DebugView;
 using FarseerPhysics;
 
 using System;
@@ -17,7 +16,7 @@ namespace RogueLikePlatfromer
     {
 
         public static World world { get; private set; }
-        public static DebugViewXNA DebugView { get; private set; }
+        //public static DebugViewXNA DebugView { get; private set; }
         public static PhysicsDebugCam DebugCam { get; private set; }
         public static Camera2D camera { get; private set; }
 
@@ -97,21 +96,21 @@ namespace RogueLikePlatfromer
             }
         }
 
-        void DebugDraw()
-        {
-            Matrix view2 = Matrix.CreateScale(32); //default 32
-            view2 *= Game1.DebugCam.view;
+        //void DebugDraw()
+        //{
+        //    Matrix view2 = Matrix.CreateScale(32); //default 32
+        //    view2 *= Game1.DebugCam.view;
 
-           // debugActive = true;
+        //   // debugActive = true;
 
-            DebugView = new DebugViewXNA(Game1.world);
-         //   DebugView.AppendFlags(FarseerPhysics.DebugViewFlags.DebugPanel);
-            DebugView.DefaultShapeColor = Color.Red;
-            DebugView.SleepingShapeColor = Color.Green;
-            DebugView.StaticShapeColor = Color.Violet;
-            DebugView.LoadContent(Setup.graphics.GraphicsDevice, Setup.ContentDevice);
-            DebugView.RenderDebugData(ref Game1.DebugCam.projection, ref view2);
-        }
+        //    DebugView = new DebugViewXNA(Game1.world);
+        // //   DebugView.AppendFlags(FarseerPhysics.DebugViewFlags.DebugPanel);
+        //    DebugView.DefaultShapeColor = Color.Red;
+        //    DebugView.SleepingShapeColor = Color.Green;
+        //    DebugView.StaticShapeColor = Color.Violet;
+        //    DebugView.LoadContent(Setup.graphics.GraphicsDevice, Setup.ContentDevice);
+        //    DebugView.RenderDebugData(ref Game1.DebugCam.projection, ref view2);
+        //}
 
 
         protected override void Draw(GameTime gameTime)
@@ -129,9 +128,9 @@ namespace RogueLikePlatfromer
             spriteBatch.End();
 
 
-#if DEBUG
-            DebugDraw();
-#endif
+//#if DEBUG
+//            DebugDraw();
+//#endif
 
             //UI & HUD stuff here
             spriteBatch.Begin(SpriteSortMode.Deferred, null, SamplerState.PointClamp, null, null, null, null);

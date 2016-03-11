@@ -4,10 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 using FarseerPhysics;
 using FarseerPhysics.Dynamics;
-using FarseerPhysics.Collision;
 using FarseerPhysics.Factories;
-using FarseerPhysics.Dynamics.Contacts;
-using FarseerPhysics.DebugView;
 
 namespace RogueLikePlatfromer
 {
