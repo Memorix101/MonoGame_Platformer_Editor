@@ -11,7 +11,7 @@
     <RootNamespace>RogueLikePlatfromer</RootNamespace>
     <AssemblyName>RogueLikePlatfromer</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <MonoGamePlatform>DesktopGL</MonoGamePlatform>
+    <MonoGamePlatform>WindowsGL</MonoGamePlatform>
     <MonoGameInstallDirectory Condition=" '$(OS)' != 'Unix' ">$(MSBuildProgramFiles32)</MonoGameInstallDirectory>
     <MonoGameInstallDirectory Condition=" '$(OS)' == 'Unix' ">$(MSBuildExtensionsPath)</MonoGameInstallDirectory>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -66,20 +66,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="DebugView MonoGame">
-      <HintPath>C:\Users\Jan-Eric\Documents\GitHub\MonoGame_2DPlatformer\Libs\Release\DebugView MonoGame.dll</HintPath>
+    <Reference Include="FarseerPhysics.Portable, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\FarseerPhysics.Portable.3.5.1\lib\portable-net4+sl4+wp8+win8\FarseerPhysics.Portable.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="FarseerPhysics MonoGame">
-      <HintPath>C:\Users\Jan-Eric\Documents\GitHub\MonoGame_2DPlatformer\Libs\Release\FarseerPhysics MonoGame.dll</HintPath>
+    <Reference Include="MonoGame.Framework, Version=3.4.0.459, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MonoGame.Framework.WindowsGL.3.4.0.459\lib\net40\MonoGame.Framework.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="OpenTK">
-      <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\OpenTK.dll</HintPath>
-    </Reference>
-    <Reference Include="NVorbis">
-      <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\NVorbis.dll</HintPath>
-    </Reference>
-    <Reference Include="MonoGame.Framework">
-      <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\MonoGame.Framework.dll</HintPath>
+    <Reference Include="OpenTK, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>packages\MonoGame.Framework.WindowsGL.3.4.0.459\lib\net40\OpenTK.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Windows.Forms" />
@@ -87,6 +84,9 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Levels\map.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Icon.ico" />
     <Content Include="OpenTK.dll.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -100,6 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
